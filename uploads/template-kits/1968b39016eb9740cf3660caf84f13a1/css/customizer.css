@@ -1,0 +1,160 @@
+/* 
+ * 1. CUSTOM ANIMATION KEYFRAMES
+ * 2. TYPOGRAPHY 
+ * 3. GALLERY – ROTATED IMAGES
+ * 4. EVENTS
+ * 5. IMAGE BOX
+ * 6. GALLERY
+ * 7. TRAINER PROFILE
+*/
+
+/* 1. CUSTOM ANIMATION KEYFRAMES */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0,100px,0);
+	}
+
+	to {
+		opacity: 1;
+		transform: none
+	}
+}
+
+
+/* 2. TYPOGRAPHY */
+.elementor-text-editor p {
+	margin: 0 0 0.25em;
+}
+
+.envato-kit-11-wrap-text {
+	word-wrap: break-word;
+}
+
+
+/* 3. GALLERY – ROTATED IMAGES */
+
+.envato-kit-11-gallery_rotate-images .gallery-item:nth-of-type(1n+0) .gallery-icon img { transform: rotate(+0.30deg); }
+.envato-kit-11-gallery_rotate-images .gallery-item:nth-of-type(2n+0) .gallery-icon img { transform: rotate(-0.50deg); }
+.envato-kit-11-gallery_rotate-images .gallery-item:nth-of-type(2n+1) .gallery-icon img { transform: rotate(+1.0deg); }
+.envato-kit-11-gallery_rotate-images .gallery-item:nth-of-type(2n+2) .gallery-icon img { transform: rotate(-0.8deg); }
+.envato-kit-11-gallery_rotate-images .gallery-item:nth-of-type(2n+3) .gallery-icon img { transform: rotate(+0.1deg); }
+.envato-kit-11-gallery_rotate-images .gallery-item:nth-of-type(2n+4) .gallery-icon img { transform: rotate(-0.70deg); }
+.envato-kit-11-gallery_rotate-images .gallery-item .gallery-icon img { transition: 1.4s ease; box-shadow: 0 6px 6px rgba(0,0,0,0.1); }
+.envato-kit-11-gallery_rotate-images .gallery-item .gallery-icon img:hover { transform: rotate(0deg); box-shadow: 0 2px 20px rgba(0,0,0,0.4); }
+
+
+/* 3. ROTATING ICON */
+
+.envato-kit-11-icon-rotate .elementor-icon i {
+		animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+		from {
+				transform: rotate(0deg);
+		}
+		to {
+				transform: rotate(359deg);
+		}
+}
+
+/* 4. EVENTS */
+
+.envato-kit-11-featured-event {
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+}
+
+.envato-kit-11-featured-event .elementor-icon-box-description {
+	display: none;
+}
+
+/* .icon-list--swap-icon-position .elementor-icon-list-item a {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-start !important;
+} */
+
+.envato-kit-11-icon-list--swap-icon-position .elementor-icon-list-icon {
+	margin: 0 10px;
+  background: #eaeaea;
+	border-radius: 50%;
+	width: 40px !important;
+	height: 40px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+@media(min-width: 1024px) {
+	.sticky-element {
+		top: 50px;
+		position: fixed;
+	}
+}
+
+/* 5. IMAGE BOX */
+
+.envato-kit-11-elementor-image-box-img img {
+	border-radius: 50%;
+}
+
+/* 6. GALLERY */
+
+@media(max-width: 1023px) and (min-width: 768px) {
+	.envato-kit-11-elementor-image-gallery .gallery-columns-8 .gallery-item {
+		max-width: 25%;
+	}
+}
+
+.envato-kit-11-gallery-caption .elementor-image-carousel-caption {
+	padding: 10px;
+}
+
+/* 7. TRAINER PROFILE */
+
+.envato-kit-11-trainer-profile--number .elementor-heading-title {
+	position: relative;
+	z-index: 1;
+}
+
+.envato-kit-11-trainer-profile--number .elementor-widget-container {
+	position: relative;
+}
+
+.envato-kit-11-trainer-profile--number 
+.elementor-widget-container:before {
+	  content: "";
+    background: #bf1c48;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+  	margin: auto;
+    border-radius: 50%;
+}
+
+/* 8. VIDEO BACKGROUND */
+
+.envato-kit-11-video-background .elementor-background-video-embed {
+	left: -66%;
+}
+
+@media(max-width: 1023px) {
+	.envato-kit-11-video-background .elementor-background-video-embed {
+	left: -100%;
+}
+}
+
+/* 9. CONTACT US */
+
+.envato-kit-11-section-overflow .elementor-widget-image {
+	overflow: hidden;
+}

@@ -1,0 +1,12 @@
+.ep-org-data-field{ display: flex; margin-bottom: 10px; }
+
+.taxonomy-em_event_organizer .term-parent-wrap{
+    display: none;
+}
+
+.description.column-description p{
+    -webkit-line-clamp: 6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

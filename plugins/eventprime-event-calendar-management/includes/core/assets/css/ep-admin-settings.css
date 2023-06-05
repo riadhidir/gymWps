@@ -1,0 +1,8 @@
+#em_custom_css {
+    width: 100%;
+    height: 200px;
+}
+
+table.ep-reg-form-field-setting thead tr th:first-child {
+    padding-left: 10px;
+}
